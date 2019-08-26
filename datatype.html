@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            firstName:"John",
+            lastName:"Lee",
+            age:30,    
+            fullName: function(){
+                return this.firstName + "," + this.lastName;
+            }     
+        }    
+        console.log(person.fullName());
+        console.log(person["age"])
+        let selection = "firstName";
+        console.log(person[selection]);
+        
+        let color = ["red", "blue", "yellow",1];
+        console.log(color[3]);
+        let persons = [
+            {name:"John", age:30},
+            {name:"Mary", age:35}
+        ]
+        console.log(persons[0].name)
+        
+        sum();
+        function sum(){
+            console.log(5+4);
+        }
+
+    </script>
+</body>
+</html>

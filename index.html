@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function myFunc(){
+            var pTag = document.getElementsByTagName('p');
+            console.log(pTag[0].chiledNodes[0].baseURI);
+        }
+        </script>
+</head>
+<body>
+    <h2>What Can Javascript Do?</h2>
+    <p>Javascript can...</p>
+    <p>attribute change</p>
+<button onclick='myFunc()'>Click to change</button>
+
+    <button onclick='document.getElementById("img1").src="https://www.w3schools.com/js/pic_bulboff.gif"'>Turn Off</button>
+    <img id='img1' src="https://www.w3schools.com/js/pic_bulboff.gif" style="width: 100px">
+    <button onclick='document.getElementById("img1").src="https://www.w3schools.com/js/pic_bulbon.gif"'>Turn On</button>
+    <script>
+    </script>
+</body>
+</html>

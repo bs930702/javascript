@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ary = ['Saab','Volvo','BMW'];
+        ary = [
+            {name:'John', age:30},
+            {name:'Mary', age:35}
+        ]
+        console.log(ary.length);
+        for(let i=0; i<ary.length;i++){
+            console.log(ary[i].name, ary[i].age);
+        }
+        ary.push('sonata'); // 뒤쪽 추가
+        ary.pop(); // 뒤쪽 제거
+        ary.unshift('kia k5'); // 앞쪽 추가
+        ary.shift(); // 앞쪽 제거
+    </script>
+</body>
+</html>
